@@ -1,4 +1,4 @@
 package org.example.lesson_1
 
-class lesson1_task1 {
-}
+val orderCounts: Int = 75
+val gratitudeText: String = "Благодарим за покупку!"
