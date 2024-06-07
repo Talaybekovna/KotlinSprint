@@ -1,4 +1,3 @@
 package org.example.lesson_3
 
-class lesson3_task3 {
-}
+fun main() {}
