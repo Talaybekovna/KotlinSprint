@@ -1,12 +1,12 @@
 package org.example.lesson_2
 
+const val BAFF = 0.2
 fun main() {
-    val crystals: Int = 7
-    val ironOres: Int = 11
-    val baff = 0.2
+    val crystals = 7
+    val ironOres = 11
 
-    val baffForCrystals = (crystals * baff).toInt()
-    val baffForIronOres = (ironOres * baff).toInt()
+    val baffForCrystals = (crystals * BAFF).toInt()
+    val baffForIronOres = (ironOres * BAFF).toInt()
 
     println("baffForCrystals: $baffForCrystals")
     println("baffForIronOres: $baffForIronOres")
