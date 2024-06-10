@@ -9,6 +9,5 @@ fun main() {
     val studentFourPoints = 5
 
     val pointsAverage = (studentOnePoints + studentTwoPoints + studentThreePoints + studentFourPoints) / totalStudents.toDouble()
-    val pointsDoubleAverage = String.format("%.2f", pointsAverage)
-    println(pointsDoubleAverage)
+    println(String.format("%.2f", pointsAverage))
 }
