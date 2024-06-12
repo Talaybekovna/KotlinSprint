@@ -12,8 +12,8 @@ fun main() {
     val totalArrivalTimeInMinutes =
         (departureTimeInHours + travelTimeInHours) * TIME_UNITS + (departureTimeInMinutes + travelTimeInMinutes)
 
-    val arrivalTimeInHours = totalArrivalTimeInMinutes / TIME_UNITS
-    val arrivalTimeInMinutes = totalArrivalTimeInMinutes % TIME_UNITS
+    val arrivalTimeInHours = String.format("%02d",totalArrivalTimeInMinutes / TIME_UNITS)
+    val arrivalTimeInMinutes = String.format("%02d",totalArrivalTimeInMinutes % TIME_UNITS)
 
     println("$arrivalTimeInHours:$arrivalTimeInMinutes")
 }
