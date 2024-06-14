@@ -19,8 +19,7 @@ fun main() {
     val isWeatherGood = readln().toBoolean()
 
     val result = (hasDamages == HAS_DAMAGES) && (crewCount in MIN_CREW_COUNT..MAX_CREW_COUNT) &&
-            (boxesOfFood > MIN_BOXES_OF_FOOD) && (isWeatherGood == IS_WEATHER_GOOD || isWeatherGood != IS_WEATHER_GOOD) ||
-            (hasDamages != HAS_DAMAGES) && (crewCount == MAX_CREW_COUNT) &&
-            (boxesOfFood >= MIN_BOXES_OF_FOOD) && (isWeatherGood == IS_WEATHER_GOOD)
+            (boxesOfFood > MIN_BOXES_OF_FOOD) ||
+            (crewCount == MAX_CREW_COUNT) && (boxesOfFood >= MIN_BOXES_OF_FOOD) && (isWeatherGood == IS_WEATHER_GOOD)
     println(result)
 }
